@@ -2,10 +2,13 @@ package com.pluralsight;
 
 import java.util.*;
 import java.io.*;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class Main {
     static Scanner scanner=new Scanner(System.in);
     static String enteredCommand;
+
 
     public static void print(String text) {
         System.out.println(text);}
@@ -39,5 +42,6 @@ public class Main {
                 }
             }
         } while (!enteredCommand.equals("x"));
+        commandLogger("exit");
     }
 }
